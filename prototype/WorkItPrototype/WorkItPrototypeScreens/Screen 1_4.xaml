@@ -1,0 +1,44 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:WpfPrototype1Screens" xmlns:ps="clr-namespace:Microsoft.Expression.Prototyping.SketchControls;assembly=Microsoft.Expression.Prototyping.SketchControls" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_1_4_Name"
+	x:Class="WpfPrototype1Screens.Screen_1_4"
+	Width="640" Height="480">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="SketchStyles.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<local:Navigation HorizontalAlignment="Left" Margin="8,144,0,0" VerticalAlignment="Top" Width="146" Height="50" d:IsPrototypingComposition="True"/>
+		<local:Header Margin="197,8,194,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+		<ps:SketchRectangleUC Margin="226,116,77,221" Style="{DynamicResource Rectangle-Sketch}"/>
+		<Path Fill="White" Stretch="Fill" Stroke="Black" Margin="226,145,75,0" VerticalAlignment="Top" Height="44.731" Data="M226,177 C235.17679,177.97886 239.48474,182.39166 249,178 254.89558,175.27896 256.9894,172 264,172 273.16547,172 275.98027,174.0148 284,168 288.4517,164.66123 293.26902,162.19293 295,157 296.33333,157.33333 298.1542,156.91672 299,158 299.41027,158.52547 299,159.33333 299,160 303.11314,162.05657 302.94291,168.54026 308,169 317.26509,169.84228 319.26738,163.02317&#xa;326,172 340.60877,191.47836 326.69677,196.20215 360,174 363.95722,171.36185 366,165.49382 366,159 366,148.40799 356.31476,145 377,145 383.33548,145 386.67122,148.9452 393,150 399.51472,151.08579 403.67032,146.26594 410,145 410,165.87943 431.83834,165.23233 463,159 469.50846,157.69831 508,192.33047 508,164 508,185.14889&#xa;494.96089,185.16341 529,188 536.44023,188.62002 543.7811,188.6659 551,187 557.19533,185.57031 559.12177,183.87823 564,179 563.33333,178.66667 562.66667,178.33333 562,178"/>
+		<TextBlock HorizontalAlignment="Left" Margin="201,116,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Width="25" Height="14" Text="HR" FontSize="10.667"/>
+		<TextBlock HorizontalAlignment="Right" Margin="0,0,77,203" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Bottom" Width="25" Height="14" FontSize="10.667" Text="Time"/>
+		<TextBlock Margin="226,54,77,0" Style="{DynamicResource TitleLeft-Sketch}" VerticalAlignment="Top" Height="30" Text="Workout summary" FontSize="26.667"/>
+		<GroupBox Margin="235,0,257.79,127.537" Style="{DynamicResource GroupBox-Sketch}" VerticalAlignment="Bottom" Header="Calories" Height="75.463">
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Margin="0,0,10,2"><Run Text="Total: 523 cal"/><LineBreak/><Run Text="Average: 12 cal/min"/></TextBlock>
+		</GroupBox>
+		<GroupBox Margin="0,0,77,127.537" Style="{DynamicResource GroupBox-Sketch}" VerticalAlignment="Bottom" Height="75.463" Header="Heart rate" HorizontalAlignment="Right" Width="147.21">
+			<TextBlock Margin="0,0,10,2" Style="{DynamicResource BodyLeft-Sketch}"><Run Text="Average"/><Run Text=": "/><Run Text="142 BPM"/><LineBreak/><Run Text="Max"/><Run Text=": "/><Run Text="156 BPM"/></TextBlock>
+		</GroupBox>
+		<GroupBox Margin="235,0,257.79,8" Style="{DynamicResource GroupBox-Sketch}" VerticalAlignment="Bottom" Height="115.537" Header="Time">
+			<TextBlock Margin="0,0,10,-29.463" Style="{DynamicResource BodyLeft-Sketch}"><Run Text="Start"/><Run Text=": "/><Run Text="18:23"/><Run Text=":56"/><LineBreak/><Run Text="End: 19:21"/><Run Text=":21"/><LineBreak/><Run Text="Active: 0:51:22"/><LineBreak/><Run Text="Total"/><Run Text=": "/><Run Text="0:58:23"/></TextBlock>
+		</GroupBox>
+		<TextBlock Margin="226,82,77,0" Style="{DynamicResource TitleLeft-Sketch}" VerticalAlignment="Top" Height="30" FontSize="26.667" Text="21.06.2011"/>
+		<Button HorizontalAlignment="Right" Margin="0,65,8,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="65" Height="32" Content="Edit">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="WpfPrototype1Screens.Screen_1_2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>

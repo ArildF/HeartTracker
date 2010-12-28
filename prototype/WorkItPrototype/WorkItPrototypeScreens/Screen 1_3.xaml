@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_1_3_Name"
+	x:Class="WpfPrototype1Screens.Screen_1_3"
+	Width="640" Height="480">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="SketchStyles.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Button Margin="104,0,301,8" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="75" Content="Pause"/>
+		<Button HorizontalAlignment="Right" Margin="0,0,161,8" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="78" Height="75" Content="Stop">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="WpfPrototype1Screens.Screen_1_4"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock Margin="104,119,292.517,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Height="83.757" FontSize="64" Text="00:03:54"/>
+		<TextBlock Margin="0,119,52.517,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Height="83.757" FontSize="64" Text="23 cal" HorizontalAlignment="Right" Width="170.483"/>
+		<TextBlock Margin="104,217,301,228" Style="{DynamicResource BasicTextBlock-Sketch}" FontSize="26.667" Text="8 cal/min"/>
+	</Grid>
+</UserControl>
