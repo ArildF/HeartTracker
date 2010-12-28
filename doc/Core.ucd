@@ -1,0 +1,140 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Core</title>
+    <DiagramType>Class Diagram</DiagramType>
+    <Version>3.2</Version>
+    <valuesFileName />
+    <elements num="7">
+        <element>
+            <type>UMLCLASS</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>7</objId>
+            <ptul X="280" Y="69" />
+            <ptdr X="370" Y="95" />
+            <links num="1">
+                <link id="9" />
+            </links>
+            <name>Session</name>
+            <stereotype />
+            <constraint />
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="0" />
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>8</objId>
+            <ptul X="483" Y="160" />
+            <ptdr X="573" Y="186" />
+            <links num="3">
+                <link id="9" />
+                <link id="11" />
+                <link id="13" />
+            </links>
+            <name>Exercise</name>
+            <stereotype />
+            <constraint />
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="0" />
+        </element>
+        <element>
+            <type>UMLAGG</type>
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>9</objId>
+            <points num="2">
+                <pt x="367" y="95" />
+                <pt x="504" y="160" />
+            </points>
+            <objStart id="7" />
+            <objEnd id="8" />
+            <stereotype />
+            <constraint />
+            <roleA mult="" />
+            <roleB mult="" />
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>10</objId>
+            <ptul X="622" Y="161" />
+            <ptdr X="731" Y="187" />
+            <links num="1">
+                <link id="11" />
+            </links>
+            <name>ExerciseRecord</name>
+            <stereotype />
+            <constraint />
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="0" />
+        </element>
+        <element>
+            <type>UMLAGG</type>
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>11</objId>
+            <points num="2">
+                <pt x="573" y="173" />
+                <pt x="622" y="174" />
+            </points>
+            <objStart id="8" />
+            <objEnd id="10" />
+            <stereotype />
+            <constraint />
+            <roleA mult="" />
+            <roleB mult="*" />
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>12</objId>
+            <ptul X="473" Y="324" />
+            <ptdr X="563" Y="350" />
+            <links num="1">
+                <link id="13" />
+            </links>
+            <name>Tag</name>
+            <stereotype />
+            <constraint />
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="0" />
+        </element>
+        <element>
+            <type>UMLASS</type>
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>13</objId>
+            <points num="2">
+                <pt x="529" y="186" />
+                <pt x="526" y="324" />
+            </points>
+            <objStart id="8" />
+            <objEnd id="12" />
+            <stereotype />
+            <constraint />
+            <roleA mult="*">
+                <navigable />
+            </roleA>
+            <roleB mult="*" />
+        </element>
+    </elements>
+</diagram>

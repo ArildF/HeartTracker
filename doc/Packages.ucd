@@ -1,0 +1,114 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Packages</title>
+    <DiagramType>Class Diagram</DiagramType>
+    <Version>3.2</Version>
+    <valuesFileName />
+    <elements num="7">
+        <element>
+            <type>UMLDEP</type>
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2</objId>
+            <points num="2">
+                <pt x="133" y="316" />
+                <pt x="211" y="580" />
+            </points>
+            <objStart id="1" />
+            <objEnd id="0" />
+            <stereotype />
+            <constraint />
+            <roleA />
+        </element>
+        <element>
+            <type>UMLPACKAGE</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1</objId>
+            <ptul X="76" Y="256" />
+            <ptdr X="329" Y="316" />
+            <links num="1">
+                <link id="2" />
+            </links>
+            <name>Rogue.HeartTracker.HeartRateMonitor</name>
+            <stereotype />
+            <constraint />
+        </element>
+        <element>
+            <type>UMLPACKAGE</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>3</objId>
+            <ptul X="735" Y="335" />
+            <ptdr X="949" Y="395" />
+            <links num="0" />
+            <name>Rogue.HeartTracker.Persistence</name>
+            <stereotype />
+            <constraint />
+        </element>
+        <element>
+            <type>UMLPACKAGE</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>0</objId>
+            <ptul X="26" Y="580" />
+            <ptdr X="228" Y="640" />
+            <links num="1">
+                <link id="2" />
+            </links>
+            <name>Rogue.HeartTracker.Bluetooth</name>
+            <stereotype />
+            <constraint />
+        </element>
+        <element>
+            <type>UMLPACKAGE</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>4</objId>
+            <ptul X="406" Y="223" />
+            <ptdr X="577" Y="283" />
+            <links num="1">
+                <link id="6" />
+            </links>
+            <name>Rogue.HeartTracker.Core</name>
+            <stereotype />
+            <constraint />
+        </element>
+        <element>
+            <type>UMLPACKAGE</type>
+            <description />
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>5</objId>
+            <ptul X="306" Y="49" />
+            <ptdr X="460" Y="109" />
+            <links num="1">
+                <link id="6" />
+            </links>
+            <name>Rogue.HeartTracker.UI</name>
+            <stereotype />
+            <constraint />
+        </element>
+        <element>
+            <type>UMLDEP</type>
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>6</objId>
+            <points num="2">
+                <pt x="409" y="109" />
+                <pt x="482" y="223" />
+            </points>
+            <objStart id="5" />
+            <objEnd id="4" />
+            <stereotype />
+            <constraint />
+            <roleA />
+        </element>
+    </elements>
+</diagram>
