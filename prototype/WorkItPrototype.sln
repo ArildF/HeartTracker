@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkItPrototype", "WorkItPrototype\WorkItPrototype.csproj", "{C5463D26-7993-4C4A-AAEA-DB2124AE357E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkItPrototypeScreens", "WorkItPrototype\WorkItPrototypeScreens\WorkItPrototypeScreens.csproj", "{31CD8BF9-DDD4-4384-9851-668FA1C8A32D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5463D26-7993-4C4A-AAEA-DB2124AE357E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5463D26-7993-4C4A-AAEA-DB2124AE357E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5463D26-7993-4C4A-AAEA-DB2124AE357E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5463D26-7993-4C4A-AAEA-DB2124AE357E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CD8BF9-DDD4-4384-9851-668FA1C8A32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CD8BF9-DDD4-4384-9851-668FA1C8A32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CD8BF9-DDD4-4384-9851-668FA1C8A32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CD8BF9-DDD4-4384-9851-668FA1C8A32D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
