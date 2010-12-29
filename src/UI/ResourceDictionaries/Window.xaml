@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ControlTemplate x:Key="ShinyWindow2" TargetType="{x:Type Window}">
+        <Border BorderThickness="1" CornerRadius="6" BorderBrush="White" Background="Black" Opacity="0.9">
+            <Grid Height="Auto">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.497*"/>
+                    <RowDefinition Height="0.503*"/>
+                </Grid.RowDefinitions>
+                <Path Stretch="Fill" Stroke="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Data="M639.99566,148.96254 C640.43705,158.45189 409.64582,30.148576 234.49936,99.473983 82.844014,159.50128 -2.9998356,291.36098 -1.9997267,268.4333 -0.16698329,226.41732 -5.4998536,-0.00087469484 0.00017751086,-0.0010971645 22.988894,-0.0020270306 431.95792,-0.00076058396 633.9966,-0.001220032 653.99556,-0.0012655108 637.99607,105.97299 639.99566,148.96254 z" Margin="-3.068,-0.5,-6.678,-34.082" Opacity="0.2">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.503,0.528" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="Auto" LastChildFill="False" Grid.RowSpan="2">
+                    <ResizeGrip DockPanel.Dock="Bottom"/>
+                </DockPanel>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+    <Style TargetType="Window" x:Key="WindowStyle">
+        <Setter Property="Template" Value="{StaticResource ShinyWindow2}"/>
+        <Setter Property="WindowStyle" Value="None"/>
+        <Setter Property="AllowsTransparency" Value="True"/>
+        <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
+        <Setter Property="Width" Value="800"/>
+        <Setter Property="Height" Value="600"/>
+    </Style>
+
+</ResourceDictionary>

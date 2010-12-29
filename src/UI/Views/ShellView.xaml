@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:il="clr-namespace:Microsoft.Expression.Interactivity.Layout;assembly=Microsoft.Expression.Interactions" xmlns:Behaviors="clr-namespace:Rogue.HeartTracker.UI.Behaviors" x:Class="Rogue.HeartTracker.UI.Views.ShellView"
+        Title="ShellView" Height="300" Width="300"
+        Style="{StaticResource ResourceKey=WindowStyle}">
+    <i:Interaction.Behaviors>
+        <Behaviors:DragOnMouseBehavior/>
+    </i:Interaction.Behaviors>
+    <Grid>
+        
+        
+    </Grid>
+</Window>
